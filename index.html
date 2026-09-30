@@ -31,19 +31,11 @@
 
   /* ---------- hero: the desert ---------- */
   .hero{position:relative;aspect-ratio:2300/1354;min-height:520px;max-height:92vh;background:url(assets/desert.jpg) center bottom/cover no-repeat;overflow:hidden}
-  .tag{position:absolute;right:5%;top:8%;text-align:right;font-family:var(--hand);color:#fff;font-size:clamp(20px,2.9vw,38px);line-height:1.12;text-shadow:0 1px 2px rgba(60,20,60,.25);transform:rotate(-2deg);max-width:48%}
-  .tag span{display:block}
-  .tag span:nth-child(2){padding-right:1.2em}
-  .tag span:nth-child(3){padding-right:.2em}
-  .tag span:nth-child(4){padding-right:1.8em}
-  .title{position:absolute;left:28%;top:42%;font-family:var(--title);font-weight:700;color:var(--teal);font-size:clamp(54px,12.5vw,170px);line-height:.8;transform:rotate(-8deg) skewX(-4deg);letter-spacing:-.01em;
-    text-shadow:1px 1px 0 var(--teal-ink),2px 2px 0 var(--teal-ink),3px 3px 0 var(--teal-ink),
-      18px 26px 6px rgba(120,55,15,.38),22px 30px 14px rgba(120,55,15,.22)}
-  .title small{display:block;font-size:.72em;padding-left:1.6em;margin-top:.12em}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .lizard{position:absolute;left:1.5%;bottom:2%;width:20%;min-width:150px;transform:rotate(-8deg)}
   .rock{position:absolute;right:20%;top:56%;width:13.5%;min-width:80px}
   .toad{position:absolute;right:13%;top:74%;width:6%;min-width:40px}
-  .sparkle{position:absolute;left:34%;top:46%;width:13%;opacity:.8;mix-blend-mode:screen;pointer-events:none}
+  .sparkle{position:absolute;left:36%;top:50%;width:13%;opacity:.8;mix-blend-mode:screen;pointer-events:none}
   .sparkle.b{left:40%;top:62%;width:11%}
 
   /* ---------- sections on the sunset ---------- */
@@ -74,9 +66,6 @@
   @media (max-width:700px){
     .nav{font-size:24px;gap:18px}
     .hero{aspect-ratio:auto;height:72vh;min-height:520px;max-height:760px;background-position:44% 100%}
-    .tag{right:4%;top:3%;max-width:72%;font-size:22px;line-height:1.1}
-    .title{left:9%;top:34%;font-size:19vw;line-height:.82}
-    .title small{padding-left:1.3em}
     .rock{right:5%;top:52%;width:24%}
     .toad{right:30%;top:71%;width:11%}
     .lizard{width:46%;bottom:1%;left:0}
@@ -100,8 +89,7 @@
 <div class="hero" role="img" aria-label="A painted desert: orange dunes, blue and pink rocks, a rainbow sky.">
   <img class="sparkle" src="assets/sparkle.gif" alt="">
   <img class="sparkle b" src="assets/sparkle.gif" alt="">
-  <p class="tag"><span>a front door for</span><span>the sites, dashboards</span><span>and experiments</span><span>of Clay Thomas</span></p>
-  <h1 class="title">rainbow<small>agama</small></h1>
+  <h1 class="sr">Rainbow Agama</h1>
   <img class="rock" src="assets/rock.gif" alt="">
   <img class="toad" src="assets/toad.gif" alt="a crazy toad, man">
   <img class="lizard" src="assets/lizard.gif" alt="WELCOME i love you!">
