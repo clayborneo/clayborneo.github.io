@@ -108,18 +108,10 @@
 
   <section id="workspaces">
     <h2>workspaces</h2>
-    <p class="lede">private rooms for family, partners and friends. members sign in with Google, or with a code sent to their email.</p>
-    <a class="signin" href="#workspaces" data-launcher>sign in →</a>
-    <div class="doors">
-      <a class="door" href="https://club.rainbowagama.com/"><b>The Club</b><span>Sarah + Clay: money, things, goals, the week.</span></a>
-      <a class="door" href="https://cosmos.rainbowagama.com/"><b>Cosmos Yoga</b><span>Studio command center for the Cosmos team.</span></a>
-      <a class="door" href="https://tf.rainbowagama.com/"><b>Thomas Fellows</b><span>Family partnership: fund, properties, capital accounts.</span></a>
-      <a class="door" href="https://wonbon.rainbowagama.com/"><b>Wonbon</b><span>Two rentals, three partners, one ledger.</span></a>
-      <a class="door" href="https://library.rainbowagama.com/"><b>The Library</b><span>The canon, the shelf, the working drafts.</span></a>
-      <a class="door" href="https://archive.rainbowagama.com/"><b>Family Archive</b><span>Letters, photos and records of the Thomases.</span></a>
-      <a class="door" href="https://boys.rainbowagama.com/"><b>The Boys</b><span>Chat, drops and the Ratio of Ra.</span></a>
-      <a class="door" href="https://hub.rainbowagama.com/"><b>Command Center</b><span>Every project's board, in one place.</span></a>
-    </div>
+    <p class="lede">private rooms for family, partners and friends. sign in with Google, or with a code sent to your email, and you will see the doors that are yours.</p>
+    <a class="signin" href="https://rainbowagama.cloudflareaccess.com/" data-launcher>sign in →</a>
+    
+  </div>
   </section>
 
   <section id="about">
@@ -142,7 +134,7 @@
 <script>
   // The workspace sign-in goes to the Cloudflare Access App Launcher once the team exists.
   // Until then the button just scrolls to the doors.
-  const LAUNCHER = ""; // e.g. "https://agama.cloudflareaccess.com/"
+  const LAUNCHER = "https://rainbowagama.cloudflareaccess.com/";
   if (LAUNCHER) document.querySelector('[data-launcher]').href = LAUNCHER;
 </script>
 </body>
