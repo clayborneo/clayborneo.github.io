@@ -51,17 +51,15 @@
   .door b{display:block;font-family:var(--hand);font-weight:400;font-size:30px;line-height:1;color:var(--teal-ink);margin-bottom:6px}
   .door span{font-size:15px;line-height:1.35;color:#5a3a2a}
   .door em{position:absolute;top:-10px;right:12px;font-style:normal;font-family:var(--hand);font-size:20px;background:var(--pink);color:#fff;padding:1px 10px;border-radius:14px;transform:rotate(3deg)}
+  .door em.lock{background:var(--teal)}
   .door.soon{opacity:.75;pointer-events:none}
   .signin{display:inline-block;margin:0 0 22px;font-family:var(--hand);font-size:28px;color:#fff;text-decoration:none;background:var(--teal);padding:8px 22px 6px;border-radius:30px 8px 30px 8px;box-shadow:0 6px 0 var(--teal-ink);transform:rotate(-1deg)}
   .signin:hover{background:#25806b}
-  .about{max-width:760px;font-size:17px;line-height:1.55;color:var(--cream);background:rgba(120,45,20,.22);padding:22px 24px;border-radius:10px 28px 10px 28px;border:1px dashed rgba(255,255,255,.55)}
-  .about p{margin:0 0 12px}.about p:last-child{margin:0}
 
   footer{position:relative;text-align:center;padding:46px 16px 40px;color:#fff}
   footer .row{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
   footer img{width:30px;height:30px}
   footer .addr{font-family:var(--hand);font-size:clamp(22px,2.6vw,30px);line-height:1.15;text-align:left;transform:rotate(-2deg)}
-  footer small{display:block;margin-top:22px;font-size:13px;opacity:.85}
 
   @media (max-width:700px){
     .nav{font-size:24px;gap:18px}
@@ -80,9 +78,7 @@
 <div class="top" id="home">
   <nav class="nav" aria-label="main">
     <a href="#home" aria-label="home"><img src="assets/home.png" alt=""></a>
-    <a href="#sites">sites</a>
     <a href="#workspaces">workspaces</a>
-    <a href="#about">about</a>
     <a href="https://hub.rainbowagama.com/" title="Clay's desk: every project in one place. Private.">command center</a>
   </nav>
 </div>
@@ -96,30 +92,22 @@
 </div>
 
 <div class="sunset">
-  <section id="sites">
-    <h2>sites</h2>
-    <p class="lede">open to anyone who wanders in.</p>
-    <div class="doors">
-      <a class="door" href="/orrery-site/"><b>The Orrery</b><span>Art, prints and the things I make with my hands.</span></a>
-      <a class="door" href="/inequality-inquiry/"><b>Inequality Inquiry</b><span>Nine notebooks on income, wealth and how people are actually doing.</span></a>
-      <a class="door soon" href="/coolbabyland/"><em>soon</em><b>Cool Baby Land</b><span>Documentary films, weird posters, experiments for ears and eyes.</span></a>
-      <a class="door soon" href="/snogshirts/"><em>soon</em><b>Snog Shirts</b><span>Shirts with a lizard's sense of humor.</span></a>
-    </div>
-  </section>
-
   <section id="workspaces">
     <h2>workspaces</h2>
-    <p class="lede">private rooms for family, partners and friends. sign in with Google, or with a code sent to your email, and you will see the doors that are yours.</p>
+    <p class="lede">the locked ones open with a Google sign-in, or a code sent to your email, if the door is yours.</p>
     <a class="signin" href="https://rainbowagama.cloudflareaccess.com/" data-launcher>sign in →</a>
-    
-  </div>
-  </section>
-
-  <section id="about">
-    <h2>about</h2>
-    <div class="about">
-      <p>The rainbow agama (<i>Agama agama</i>) is a lizard that turns orange, blue and violet when the sun is out and goes plain brown when it is not. Seemed right for a place that holds a yoga studio, a family partnership, a library of stories, a pile of research and a couple of joke shirt companies.</p>
-      <p>Everything here is made in Chattanooga, Tennessee, by Clay Thomas, mostly with Claude. If a door is locked and you think it should open for you, ask Clay.</p>
+    <div class="doors">
+      <a class="door" href="https://hub.rainbowagama.com/"><em class="lock">private</em><b>Command Center</b><span>Every project in one place: boards, deadlines, what's next.</span></a>
+      <a class="door" href="https://club.rainbowagama.com/"><em class="lock">private</em><b>The Club</b><span>The investment club's books, positions and meetings.</span></a>
+      <a class="door" href="https://tf.rainbowagama.com/"><em class="lock">private</em><b>Thomas Fellows</b><span>The family partnership's command center.</span></a>
+      <a class="door" href="https://cosmos.rainbowagama.com/"><em class="lock">private</em><b>Cosmos Yoga</b><span>The studio's command center.</span></a>
+      <a class="door" href="https://wonbon.rainbowagama.com/"><em class="lock">private</em><b>Wonbon</b><span>Two Chattanooga rentals, three partners, one ledger.</span></a>
+      <a class="door" href="https://money.rainbowagama.com/"><em class="lock">private</em><b>Money Stuff</b><span>The Granary: net worth, cash flow, budget and plays.</span></a>
+      <a class="door" href="https://art.rainbowagama.com/"><em class="lock">private</em><b>Art I Like</b><span>A stash of paintings, prints and pictures worth keeping.</span></a>
+      <a class="door soon" href="https://music.rainbowagama.com/"><em>soon</em><b>Music</b><span>Twenty-five years of songs, gathered in one place.</span></a>
+      <a class="door" href="/library-canon-site/"><b>The Library</b><span>The canon of stories, and a readers' site.</span></a>
+      <a class="door" href="/boys-chat-site/"><b>Boys Chat</b><span>Stats, a case file and a prediction ledger from the group chat.</span></a>
+      <a class="door" href="/family-archive/"><b>Family Archive</b><span>Thomas family photos, letters and records.</span></a>
     </div>
   </section>
 
@@ -128,7 +116,6 @@
       <a href="#home"><img src="assets/home.png" alt="home"></a>
       <div class="addr">rainbowagama.com<br>chattanooga, tn</div>
     </div>
-    <small>also answers to agamaagama.com · art borrowed from the Cool Baby desert</small>
   </footer>
 </div>
 
